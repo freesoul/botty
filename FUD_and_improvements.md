@@ -1,8 +1,8 @@
 
 # Improvements
 
+- Heal when amplify damage - DONE
 - Fix and re-enable the find contours skip in the item image detection.
-- Heal when amplify damage
 - Improve pickit NIB - gold / starter / refined
 - Sell items when fail
 - Stash gold more often (optionally)
