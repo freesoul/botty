@@ -185,9 +185,8 @@ class PickIt:
                     break
                 case PickedUpResult.PickedUp:
                     self._picked_up_items.append(item)
-                    # BUGFIX tabbed following next 2 lines by 1
-                    self._picked_up_item = pick_up_res == PickedUpResult.PickedUp
-                    item_count+=1
+            self._picked_up_item = pick_up_res == PickedUpResult.PickedUp
+            item_count+=1
 
         keyboard.send(Config().char["show_items"])
         return len(self._picked_up_items) >= 1
