@@ -17,6 +17,9 @@ def start_game() -> bool:
     :return: Bool if action was successful
     """
     Logger.debug("Wait for Play button")
+
+    wait(1,12)
+
     start = time.time()
     difficulty=Config().general["difficulty"].lower()
     difficulty_key="r" if difficulty == "normal" else "n" if difficulty == "nightmare" else "h"

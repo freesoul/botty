@@ -1,3 +1,11 @@
+
+if __name__ == "__main__":
+    import os
+    import sys
+    p = os.path.join(os.path.dirname(__file__), '..')
+    print(p)
+    sys.path.append(p)
+    
 from enum import Enum
 from numpy import ndarray
 import cv2
@@ -185,9 +193,10 @@ class PickIt:
 
 
 if __name__ == "__main__":
+
     import os
     from config import Config
-    from char.sorceress import LightSorc
+    # from char.sorceress import LightSorc
     from char.paladin import Hammerdin
     from pather import Pather
     import keyboard

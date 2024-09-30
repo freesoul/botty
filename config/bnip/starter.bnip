@@ -1,0 +1,68 @@
+
+[Name] == Grandcharm && [Quality] == Magic # [Coldresist]+[Fireresist]+[Lightresist]+[Poisonresist] >= 48 // Plain +12 All Res
+
+[Name] == Smallcharm && [Quality] == Magic # [Coldresist]+[Fireresist]+[Lightresist]+[Poisonresist] >= 4    // +4 All Res
+[Name] == Smallcharm && [Quality] == Magic # [Maxhp] >= 15          // Plain +Hp
+[Name] == Smallcharm && [Quality] == Magic # [Maxhp] >= 10 && [Coldresist]+[Fireresist]+[Lightresist]+[Poisonresist] >= 7        // Plain +Hp + res
+
+
+[Name] == Heavygloves && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 10     	// Bloodfist
+[Name] == Chaingloves && [Quality] == Unique && [Flag] != Ethereal # [Itemmagicbonus] >= 25    	// Chance Guards
+[Name] == Lightgauntlets && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 20     // Magefist
+[Name] == Gauntlets && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 10     	// Frostburn
+[Name] == Vampirebonegloves && [Quality] == Unique && [Flag] != Ethereal # [Strength] == 10      // Dracul's Grasp
+[Name] == Ogregauntlets && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddamage] >= 30 && [Strength] >= 15 && [Plusdefense] >= 170       // Steelrend
+
+
+[Name] == Bonevisage && [Quality] == Set      // Trang-Oul's Guise
+[Name] == Chaosarmor && [Quality] == Set      // Trang-Oul's Scales
+[Name] == Cantortrophy && [Quality] == Set        // Trang-Oul's Wing
+[Name] == Trollbelt && [Quality] == Set       // Trang-Oul's Girth
+
+[Name] == Heavybelt && [Quality] == Unique && [Flag] != Ethereal # [Itemgoldbonus] >= 50        // Goldwrap
+
+[Name] == Heavybelt && [Quality] == Unique && [Flag] != Ethereal # [Itemgoldbonus] >= 50        // Goldwrap
+[Name] == Demonhidesash && [Quality] == Unique && [Flag] != Ethereal # [Lifeleech] >= 6 && [Damageresist] >= 12 && [Magicdamagereduction] >= 12	&& [Enhanceddefense] >= 150     // String Of Ears
+
+
+[Name] == Warboots && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 160      // Gore Rider
+
+[Name] == Bramblemitts && [Quality] == Set     // Laying Of Hands
+
+
+[Name] == Skullcap && [Quality] == Unique && [Flag] != Ethereal # [Itemmagicbonus] >= 25     // Tarnhelm
+[Name] == Warhat && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddamage] >= 100        // Peasant Crown
+[Name] == Sallet && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddamage] >= 160 && [Coldresist]+[Lightresist]+[Fireresist] >= 60       // Rockstopper
+[Name] == Wingedhelm && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 150 && [Amazonskills] >= 1       // Valkyrie Wing
+[Name] == Grandcrown && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 160 && [Lifeleech] >= 9 && [Itemgoldbonus] >= 80     // Crown Of Thieves
+[Name] == Grandcrown && [Quality] == Unique && [Flag] == Ethereal # [Enhanceddefense] >= 160 && [Lifeleech] >= 9 && [Itemgoldbonus] >= 80     // Eth Crown Of Thieves
+[Name] == Grimhelm && [Quality] == Unique && [Flag] != Ethereal # [Lifeleech] >= 6 && [Manaleech] >= 6 && [Magicdamagereduction] >= 10 && [Damageresist] >= 15    // Vampire Gaze
+[Name] == Shako && [Quality] == Unique && [Flag] != Ethereal # [Defense] >= 98     // Harlequin Crest Shako
+[Name] == Armet && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 100 && [Manaleech] >= 4     // Steel Shade
+[Name] == Spiredhelm && [Quality] == Unique && [Flag] != Ethereal # [Allres] >= 50       // Veil Of Steel
+[Name] == Spiredhelm && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 90 && [Dexterity] >= 10 && [Itemabsorbcold] >= 5 && [Passivecoldmastery] >= 8       // Nightwing's Veil
+[Name] == Demonhead && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 100 && [Lifeleech] >= 8 && [Strength] >= 25      // Andariel's Visage
+[Name] == Demonhead && [Quality] == Unique && [Flag] == Ethereal # [Enhanceddefense] >= 100 && [Lifeleech] >= 8 && [Strength] >= 25      // Eth Andariel's Visage
+[Name] == Corona && [Quality] == Unique && [Flag] != Ethereal # [Plusdefense] >= 100 && [DamageResist] >= 10 && [Allres] >= 20 && [Sockets] >= 1        // Crown Of Ages
+[Name] == Bonevisage && [Quality] == Unique && [Flag] != Ethereal # [Plusdefense] >= 250 && [Strength] >= 25 && [Sockets] >= 1       // Giant Skull
+[Name] == Bonevisage && [Quality] == Unique && [Flag] == Ethereal # [Plusdefense] == 320 && [Strength] == 35 && [Sockets] == 2       // Eth Giant Skull Perfect
+[Name] == Diadem && [Quality] == Unique && [Flag] != Ethereal   // Griffon's Eye
+[Name] == Tiara && [Quality] == Unique && [Flag] != Ethereal # [Allres] >= 50   // Kira's Guardian
+
+[Name] == Mesharmor && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 180     // Shaftstop
+[Name] == Mageplate && [Quality] == Unique && [Flag] != Ethereal # [Enhanceddefense] >= 140 && [Magicdamagereduction] >= 6     // Que-Hegan's Wisdom
+
+
+[Type] == Amulet && [Quality] == Unique # [Allres] >= 10 && [Enhanceddefense] >= 10       // The Mahim-Oak Curio
+[Type] == Amulet && [Quality] == Unique # [Allres] >= 15 && [Strength] >= 12        // Saracen's Chance
+[Type] == Amulet && [Quality] == Unique # [Dexterity] >= 25 && [Ias] >= 20     // The Cat's Eye
+[Type] == Amulet && [Quality] == Unique # [Lifeleech] >= 3 && [Manaleech] >= 11     // Crescent Moon
+[Type] == Amulet && [Quality] == Unique # [Poisonresist] >= 75      // Atma's Scarab
+[Type] == Amulet && [Quality] == Unique # [Hpregen] >= 10 && [Fireskilltab] >= 2       // The Rising Sun
+[Type] == Amulet && [Quality] == Unique # [Itemallskills] == 2 && [Allresist] >= 20     // Mara's Kaleidoscope
+[Type] == Amulet && [Quality] == Unique # [Defensiveaurasskilltab] >= 1     // Seraph's Hymn
+[Type] == Amulet && [Quality] == Unique # [Coldresist] >= 35 && [Plusdefense] >= 300 && [Allres] >= 25 && [Tohit] >= 400       // Metalgrid
+
+
+[Name] == Amulet && [Quality] == Magic # [Itemchargedskill] == 54		// Tele Amulet
+[Type] == Amulet && [Quality] == Magic # [Itemaddskilltab] >= 3 && ([Fcr] >= 10 || [Itemmagicbonus] >= 35)        // +3 Skill Fcr/Mf Amulet

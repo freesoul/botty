@@ -1,0 +1,101 @@
+
+[Type] == Circlet   # [Itemchargedskill] == 54 && [Fcr] >= 20      // for gold
+
+[Type] == Helm && [Quality] == Rare && [Class] == Elite && [Flag] == Ethereal # [Itemtohitpercentperlevel] >= 1 && [Sockets] == 2 && [Itemreplenishdurability] >= 1 && ([Enhanceddefense] >= 100 || [Maxhp] >= 20 || [Fhr] == 10 || [Itempoisonlengthresist] == 25 || [Palicombatskilltab] == 2)
+[Type] == Helm && [Quality] == Rare && [Flag] != Ethereal # [Itemtohitpercentperlevel] >= 1 && [Maxhp] >= 30 && ([Enhanceddefense] >= 100 || [Fhr] == 10 || [Itempoisonlengthresist] == 25 || [Palicombatskilltab] == 2) && [Sockets] == 2
+[Type] == Helm && [Quality] == Rare && [Flag] != Ethereal # [Itemtohitpercentperlevel] >= 1 && [Fhr] == 10 && ([Enhanceddefense] >= 100 || [Itempoisonlengthresist] == 25 || [Palicombatskilltab] == 2) && [Sockets] == 2
+[Type] == Helm && [Quality] == Rare && [Flag] != Ethereal # [Itemtohitpercentperlevel] >= 1 && [Enhanceddefense] >= 100 && ([Itempoisonlengthresist] == 25 || [Palicombatskilltab] == 2) && [Sockets] == 2
+[Type] == Helm && [Quality] == Rare && [Flag] != Ethereal # [Itemtohitpercentperlevel] >= 1 && [Itempoisonlengthresist] == 25 && [Palicombatskilltab] == 2 && [Sockets] == 2
+[Name] == Bonevisage && [Quality] == Rare # [Itemtohitpercentperlevel] >= 1 && [Itemtohitpercent] >= 5 && [Sockets] == 2
+[Name] == Corona && [Quality] == Rare # [Itemtohitpercentperlevel] >= 1 && [Itemtohitpercent] >= 5 && [Sockets] == 2
+
+
+[Type] == Shield && [Quality] == Rare && [Flag] == Ethereal # [Enhanceddefense] >= 150 && [Itemreplenishdurability] >= 1 && [Sockets] == 2
+[Type] == Shield && [Quality] == Rare && [Flag] != Ethereal # [Fhr] >= 17 && [Fbr] >= 30 && ([Maxhp] >= 30 || [Coldresist]+[Fireresist]+[Lightresist]+[Poisonresist] >= 40) && [Sockets] == 2
+[Type] == Shield && [Quality] == Rare && [Flag] == Ethereal # [Fhr] >= 17 && [Fbr] >= 30 && ([Maxhp] >= 30 || [Coldresist]+[Fireresist]+[Lightresist]+[Poisonresist] >= 40) && [Itemreplenishdurability] >= 1 && [Sockets] == 2
+[Type] == Shield && [Quality] == Rare && [Flag] != Ethereal # [Maxhp] >= 30 && [Coldresist]+[Fireresist]+[Lightresist]+[Poisonresist] >= 40 && [Fbr] >= 30 && [Sockets] == 2
+[Type] == Shield && [Quality] == Rare && [Flag] == Ethereal # [Maxhp] >= 30 && [Coldresist]+[Fireresist]+[Lightresist]+[Poisonresist] >= 40 && [Fbr] >= 30 && [Itemreplenishdurability] >= 1 && [Sockets] == 2
+[Type] == Voodooheads && [Quality] == Rare # [Necromancerskills] == 2 && ([Skillbonespear] >= 3 || [Skillpoisonnova] >= 3) && [Fbr] >= 30 && [Fhr] >= 17 && [Sockets] >= 2
+[Type] == Auricshields && [Quality] == Rare && [Flag] != Ethereal # [Paladinskills] >= 2 && [Fbr] == 30 && [Sockets] == 2
+[Type] == Auricshields && [Quality] == Rare && [Flag] == Ethereal # [Paladinskills] >= 2 && [Fbr] >= 15 && [Itemreplenishdurability] >= 1 && [Sockets] == 2
+
+[Type] == Orb && [Quality] <= Rare # [Skillenchant] >= 2 && [Fireskilltab] == 3
+[Type] == Orb && [Quality] <= Rare # [Skillenchant] == 3 && [Fireskilltab] >= 2
+[Type] == Orb && [Quality] <= Rare # [Skillenchant] == 3 && [Sorceressskills] == 2
+
+[Name] == Archonplate && [Quality] == Normal && [Flag] != Ethereal # [Sockets] == 0          // Plain
+[Name] == Duskshroud && [Quality] == Normal && [Flag] != Ethereal # [Sockets] == 0          // Plain
+[Name] == Mageplate && [Quality] == Normal && [Flag] != Ethereal # [Sockets] == 0          // Plain
+[Name] == Greathauberk && [Quality] == Normal && [Flag] != Ethereal # [Sockets] == 0          // Plain
+[Name] == Wirefleece && [Quality] == Normal && [Flag] != Ethereal # [Sockets] == 0          // Plain
+[Name] == Scarabhusk && [Quality] == Normal && [Flag] != Ethereal # [Sockets] == 0          // Plain
+[Name] == Wyrmhide && [Quality] == Normal && [Flag] != Ethereal # [Sockets] == 0          // Plain
+[Name] == Lightplate && [Quality] == Normal && [Flag] != Ethereal # [Sockets] == 0          // Plain
+[Name] == Shadowplate && [Quality] == Normal && [Flag] != Ethereal # [Sockets] == 0          // Plain
+[Name] == Sacredarmor && [Quality] == Normal && [Flag] != Ethereal # [Sockets] == 0          // Plain
+
+[Name] == Archonplate && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 3          // Socketed
+[Name] == Duskshroud && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 3          // Socketed
+[Name] == Mageplate && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 3          // Socketed
+[Name] == Greathauberk && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 3          // Socketed
+[Name] == Wirefleece && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 3          // Socketed
+[Name] == Scarabhusk && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 3          // Socketed
+[Name] == Wyrmhide && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 3          // Socketed
+[Name] == Lightplate && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 3          // Socketed
+[Name] == Shadowplate && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 4          // Socketed
+[Name] == Sacredarmor && [Quality] == Normal && [Flag] != Ethereal # [Sockets] >= 4          // Socketed
+[Name] == Lightplate && [Quality] == Superior && [Flag] != Ethereal # [Sockets] == 0 && [Enhanceddefense] >= 10           // Plain Superior
+[Name] == Shadowplate && [Quality] == Superior && [Flag] != Ethereal # [Sockets] == 0 && [Enhanceddefense] >= 10           // Plain Superior
+[Name] == Sacredarmor && [Quality] == Superior && [Flag] != Ethereal # [Sockets] == 0 && [Enhanceddefense] >= 10           // Plain Superior
+
+
+
+[Type] == Pelt && [Quality] == Magic && [Flag] != Ethereal # [Skilltornado]+[Druidskills] >= 5       // Windy Druid Pelt
+([Name] == Crownshield || [Name] == Royalshield || [Name] == Sacredtarge || [Name] == Sacredrondache) && [Quality] == Magic # [Sockets] == 4 && [Itemreqpercent] == -30 // Paladin Jmos
+[Type] == Voodooheads && [Quality] == Magic && [Class] >= Exceptional && [Flag] != Ethereal # ([Necromancerskills] >= 1 || [Poisonandboneskilltab] >= 1) && [Fbr] >= 30 && [Skillbonespear] >= 1
+
+[Type] == Scepter && [Quality] == Magic # [Paladinskills]+[Skillblessedhammer] >= 5 && ([Skillconcentration] >= 3 || [Fcr] >= 10 && [Skillconcentration] >= 2)
+[Type] == Scepter && [Quality] == Magic # [Paladinskills]+[Skillfistoftheheavens] >= 5 && ([Skillconviction] >= 3 || [Fcr] >= 10 && [Skillconviction] >= 2)
+[Type] == Scepter && [Quality] == Magic # [Palicombatskilltab]+[Skillblessedhammer] >= 6 && ([Skillconcentration] >= 3 || [Fcr] >= 10 && [Skillconcentration] >= 2)
+[Type] == Scepter && [Quality] == Magic # [Palicombatskilltab]+[Skillfistoftheheavens] >= 6 && ([Skillconviction] >= 3 || [Fcr] >= 10 && [Skillconviction] >= 2)
+
+[Type] == Orb && [Quality] == Magic # [Sorceressskills]+[Skilllightning] >= 5 && ([Fcr] >= 20 && [Skilllightningmastery] >= 1 || [Skilllightningmastery] >= 3)     // Light Orb
+[Type] == Orb && [Quality] == Magic # [Lightningskilltab]+[Skilllightning] >= 6 && ([Fcr] >= 20 && [Skilllightningmastery] >= 1 || [Skilllightningmastery] >= 3)       // Light Orb
+[Type] == Orb && [Quality] == Magic # ([Sorceressskills]+[Skillfrozenorb] >= 5 || [Sorceressskills]+[Skillblizzard] >= 5) && ([Fcr] >= 20 && [Skillcoldmastery] >= 1 || [Skillcoldmastery] >= 3)       // Cold Orb
+[Type] == Orb && [Quality] == Magic # ([Coldskilltab]+[Skillfrozenorb] >= 6 || [Coldskilltab]+[Skillblizzard] >= 6) && ([Fcr] >= 20 && [Skillcoldmastery] >= 1 || [Skillcoldmastery] >= 3)     // Cold Orb
+[Type] == Orb && [Quality] == Magic # [Sorceressskills]+[Skillfireball] >= 5 && (([Fcr] >= 20 && [Skillfiremastery] >= 1) || [Skillfiremastery] >= 3)        // Fire Orb
+[Type] == Orb && [Quality] == Magic # ([Fireskilltab]+[Skillenchant] >= 6 || [Fireskilltab]+[Skillfireball] >= 6) && ([Fcr] >= 20 && [Skillfiremastery] >= 1 || [Skillfiremastery] >= 3)       // Fire Orb
+[Type] == Orb && [Quality] == Magic # [Fireskilltab]+[Skillhydra] >= 6 && [Skillfiremastery] >= 2        // Hydra Orb
+
+
+([Name] == Archonplate || [Name] == Duskshroud || [Name] == Wirefleece || [Name] == Greathauberk || [Name] == Sacredarmor) && [Quality] == Magic && [Flag] != Ethereal # [Sockets] == 4 && [Maxhp] >= 85      // Jeweler's Armor Of The Whale
+([Name] == Archonplate || [Name] == Duskshroud || [Name] == Wirefleece || [Name] == Greathauberk || [Name] == Sacredarmor) && [Quality] == Magic && [Flag] != Ethereal # [Sockets] == 4 && [Fhr] >= 24        // Jeweler's Armor Of Stability
+([Name] == Archonplate || [Name] == Duskshroud || [Name] == Wirefleece || [Name] == Greathauberk || [Name] == Sacredarmor) && [Quality] == Magic && [Flag] != Ethereal # [Sockets] == 4 && [Itemfasterblockrate] == 30        // Jeweler's Armor Of Deflecting
+([Name] == Mageplate || [Name] == Breastplate || [Name] == Lightplate) && [Quality] == Magic # [Sockets] == 3 && ([Maxhp] == 80 || [Itemlevelreq] <= 30)      // Artisan's Armor Of X
+
+
+[Type] == Gloves && [Quality] == Magic && [Flag] != Ethereal # [Ias] >= 20 && ([Javelinandspearskilltab] == 3 || [Bowandcrossbowskilltab] == 3 || [Martialartsskilltab] == 3)     // 3/20 Gloves
+
+
+
+([Name] == Demonhead || [Name] == Bonevisage || [Name] == Spiredhelm || [Name] == Corona) && [Quality] == Magic # [Itemtohitpercentperlevel] >= 1 && ([Fhr] == 10 || [Maxhp] >= 30)
+
+[Type] == Primalhelm && [Quality] == Magic && [Flag] != Ethereal # ([Barbarianskills] == 2 || [Warcriesskilltab] >= 2) && [Skillbattleorders] >= 3        // All B.O Helms
+([Name] == Assaulthelmet || [Name] == Avengerguard || [Name] == Savagehelmet || [Name] == Slayerguard || [Name] == Conquerorcrown || [Name] == Guardiancrown) && [Quality] == Magic # ([Barbarianskills]+[Skillbattleorders] >= 5 || [Warcriesskilltab]+[Skillbattleorders] >= 6)     // 5-6 B.O Arreat Style
+
+[Type] == Pelt && [Quality] == Magic && [Flag] != Ethereal # [Skilltornado]+[Druidskills] >= 5       // Windy Druid Pelt
+[Type] == Pelt && [Quality] == Magic && [Flag] != Ethereal # [Skilltornado]+[Elementalskilltab] >= 5       // Windy Druid Pelt
+[Type] == Pelt && [Quality] == Magic && [Flag] != Ethereal # [Skillfissure]+[Druidskills] >= 5       // Fissure Druid Pelt
+[Type] == Pelt && [Quality] == Magic && [Flag] != Ethereal # [Skillfissure]+[Elementalskilltab] >= 5       // Fissure Druid Pelt
+
+
+
+
+[Name] == Demonhidesash && [Quality] == Magic && [Flag] != Ethereal # [Lifeleech] >= 6 && [Damageresist] >= 12 && [Magicdamagereduction] >= 12	&& [Enhanceddefense] >= 150     // for gold
+[Name] == Heavybelt && [Quality] == Magic && [Flag] != Ethereal # [Lifeleech] >= 8 && [Damageresist] >= 15 && [Magicdamagereduction] >= 15	&& [Enhanceddefense] >= 180     // for gold
+[Name] == Battlebelt && [Quality] == Magic && [Flag] != Ethereal # [Lifeleech] >= 8 && [Damageresist] >= 15 && [Magicdamagereduction] >= 15	&& [Enhanceddefense] >= 180     // for gold
+[Name] == Warbelt && [Quality] == Magic && [Flag] != Ethereal # [Lifeleech] >= 8 && [Damageresist] >= 15 && [Magicdamagereduction] >= 15	&& [Enhanceddefense] >= 180     // for gold
+[Name] == Vampirefangbelt && [Quality] == Magic && [Flag] != Ethereal # [Lifeleech] >= 8 && [Damageresist] >= 15 && [Magicdamagereduction] >= 15	&& [Enhanceddefense] >= 180     // for gold
+[Name] == Mithrilcoil && [Quality] == Magic && [Flag] != Ethereal # [Lifeleech] >= 8 && [Damageresist] >= 15 && [Magicdamagereduction] >= 15	&& [Enhanceddefense] >= 180     // for gold
+[Name] == Sharkskinbelt && [Quality] == Magic && [Flag] != Ethereal # [Lifeleech] >= 8 && [Damageresist] >= 15 && [Magicdamagereduction] >= 15	&& [Enhanceddefense] >= 180     // for gold
+[Name] == Spiderwebsash && [Quality] == Magic && [Flag] != Ethereal # [Lifeleech] >= 8 && [Damageresist] >= 15 && [Magicdamagereduction] >= 15	&& [Enhanceddefense] >= 180     // for gold

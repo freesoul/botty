@@ -327,6 +327,7 @@ class Bot:
                     return self.trigger_or_stop("end_game", failed=True)
                 # recheck inventory
                 items = personal.inspect_items(game_stats=self._game_stats)
+
         keep_items = any([item.keep for item in items]) if items else None
         sell_items = any([item.sell for item in items]) if items else None
         stash_gold = personal.get_inventory_gold_full()
