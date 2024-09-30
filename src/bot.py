@@ -348,7 +348,7 @@ class Bot:
                 items = result_items
                 sell_items = any([item.sell for item in items]) if items else None
                 Logger.debug(f"Needs: {consumables.get_needs()}")
-        elif meters.get_health(img) < 0.6 or meters.get_mana(img) < 0.2:
+        elif meters.get_health(img) < 0.6 or meters.get_mana(img) < 0.2 or self._char.is_affected_by_curse(img):
             Logger.info("Healing at next possible Vendor")
             self._curr_loc = self._town_manager.heal(self._curr_loc)
         if not self._curr_loc:
@@ -456,8 +456,7 @@ class Bot:
     def on_end_run(self):
         if not Config().char["pre_buff_every_run"]:
             self._pre_buffed = True
-        success = self._char.tp_town()
-        if success:
+        if self._char.tp_town():
             self._curr_loc = self._town_manager.wait_for_tp(self._curr_loc)
             if self._curr_loc:
                 set_pause_state(True)

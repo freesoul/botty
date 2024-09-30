@@ -1,3 +1,13 @@
+
+if __name__ == "__main__":
+    import os
+    import sys
+    p = os.path.join(os.path.dirname(__file__), '..')
+    print(p)
+    sys.path.append(p)
+    
+    
+    
 from typing import Callable
 import random
 import time
@@ -381,13 +391,36 @@ class IChar:
 
     def kill_cs_trash(self, location:str) -> bool:
         raise ValueError("Diablo CS Trash is not implemented!")
+    
+    def is_affected_by_curse(self, img: np.ndarray = None):
+        img = img if img else grab()
+        char_curse_area = cut_roi(img, Config().ui_roi["char_curse"])
+        # open image in assets/curses/amplify_dmg.png
+        # char_curse_area = cv2.imread("assets/curses/amplify_dmg.png", cv2.IMREAD_UNCHANGED)
+        curse_amplify_dmg_mask, _ = color_filter(char_curse_area, Config().colors["curse_orange"])
+        has_amplify = np.sum(curse_amplify_dmg_mask) > 50000
+        return has_amplify
+        # print(count)
+        # # orange = 152235        
+        # cv2.imshow("char_curse_area", char_curse_area)  
+        # cv2.waitKey(0)
+        # cv2.imshow("curse_amplify_dmg_mask", curse_amplify_dmg_mask)
+        # cv2.waitKey(0)
+        # return False
+
 
 if __name__ == "__main__":
     import os
     import keyboard
-    keyboard.add_hotkey('f12', lambda: os._exit(1))
-    print(f"Get on D2R screen and press F11 when ready")
+    
+    from logger import Logger
+    from screen import start_detecting_window, stop_detecting_window
+
+    keyboard.add_hotkey('f12', lambda: Logger.info('Force Exit (f12)') or stop_detecting_window() or os._exit(1))
+    start_detecting_window()
+    print("Move to d2r window and press f11")
     keyboard.wait("f11")
+
     from utils.misc import cut_roi
     from config import Config
     from ui import skills
@@ -395,7 +428,8 @@ if __name__ == "__main__":
     skill_hotkeys = {}
 
     i_char = IChar({})
+    i_char.affected_by_curse()
 
-    while True:
-        print(skills.get_skill_charges(grab()))
-        wait(1)
+    # while True:
+        # print(skills.get_skill_charges(grab()))
+        # wait(1)
