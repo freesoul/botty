@@ -338,23 +338,20 @@ def inspect_items(inp_img: np.ndarray = None, close_window: bool = True, game_st
                         failed = True
                 except AttributeError as e:
                     failed = True
-                    # Sell item (or drop it)
                     Logger.info(f"Dropping {item_name}. Failed with AttributeError {e}")
-                    transfer_items([box], action = "drop")  # or drop
-            # else:
-            #     Logger.warning(f"inspect_items: OCR failed for slot {slot[0]}")
-            #     # # sell on next time the vendor is open
-            #     # if vendor_open:
-            #     box = BoxInfo(
-            #         img = item_box.img,
-            #         pos = (x_m, y_m),
-            #         column = slot[2],
-            #         row = slot[1],
-            #         sell = False,
-            #         need_id = False,
-            #         keep = False
-            #     )
-            #     transfer_items([box], action = "drop")  # or drop
+                    transfer_items([box], action = "drop") 
+            else:
+                Logger.warning(f"item_box.ocr_result is None {slot[0]}")
+                box = BoxInfo(
+                    img = item_box.img,
+                    pos = (x_m, y_m),
+                    column = slot[2],
+                    row = slot[1],
+                    sell = False,
+                    need_id = False,
+                    keep = False
+                )
+                transfer_items([box], action = "drop") 
 
         if failed:
             log_item_fail(hovered_item, slot)
