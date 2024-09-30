@@ -1,3 +1,11 @@
+
+if __name__ == "__main__":
+    import os
+    import sys
+    p = os.path.join(os.path.dirname(__file__), '..')
+    print(p)
+    sys.path.append(p)
+    
 import cv2
 import numpy as np
 import re
@@ -114,17 +122,18 @@ def crop_item_tooltip(image: np.ndarray, model: str = "hover-eng_inconsolata_inv
             contains_orange = np.min(orange_mask) > 0
         if not (contains_white or contains_orange):
             continue
-
-        # check to see if contour overlaps right inventory
-        right_inv = Config().ui_roi["right_inventory"]
-        overlaps_inventory = not (
-            x+w < right_inv[0] or right_inv[0]+right_inv[2] < x or y+h+60 < right_inv[1] or right_inv[1]+right_inv[3] < y)
-        if not overlaps_inventory:
-            left_inv = Config().ui_roi["left_inventory"]
-            overlaps_inventory |= not (
-                x+w < left_inv[0] or left_inv[0]+left_inv[2] < x or y+h+60 < left_inv[1] or left_inv[1]+left_inv[3] < y)
-        if not overlaps_inventory:
-            continue
+        
+        # BUGFIX this check fails
+        # # check to see if contour overlaps right inventory
+        # right_inv = Config().ui_roi["right_inventory"]
+        # overlaps_inventory = not (
+        #     x+w < right_inv[0] or right_inv[0]+right_inv[2] < x or y+h+60 < right_inv[1] or right_inv[1]+right_inv[3] < y)
+        # if not overlaps_inventory:
+        #     left_inv = Config().ui_roi["left_inventory"]
+        #     overlaps_inventory |= not (
+        #         x+w < left_inv[0] or left_inv[0]+left_inv[2] < x or y+h+60 < left_inv[1] or left_inv[1]+left_inv[3] < y)
+        # if not overlaps_inventory:
+        #     continue
 
         #print(f"x: {x}, y: {y}, w: {w}, h: {h}")
         footer_y = (y + h) if (y + h) < 700 else 700
@@ -632,6 +641,7 @@ if __name__ == "__main__":
         img_o = grab()
         tooltip = crop_item_tooltip(img_o)
         print(tooltip)
-        cv2.imshow('test', tooltip[0].img)
-        #cv2.imshow('test', tooltip[0].ocr_result.processed_img)
-        key = cv2.waitKey(20000)
+        if tooltip and tooltip[0] and tooltip[0].img is not None:
+            cv2.imshow('test', tooltip[0].img)
+            # cv2.imshow('test', tooltip[0].ocr_result.processed_img)
+            key = cv2.waitKey(20000)

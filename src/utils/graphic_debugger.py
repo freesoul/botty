@@ -287,6 +287,7 @@ class GraphicDebuggerController:
         search_templates = ["A5_TOWN_0", "A5_TOWN_1", "A5_TOWN_2", "A5_TOWN_3"]
         while 1:
             img = grab()
+            combined_img = np.zeros(img.shape, dtype="uint8")
             # Show Town A5 template matches
             scores = {}
             for template_name in search_templates:
