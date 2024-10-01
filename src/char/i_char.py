@@ -393,7 +393,8 @@ class IChar:
         raise ValueError("Diablo CS Trash is not implemented!")
     
     def is_affected_by_curse(self, img: np.ndarray = None):
-        img = img if img else grab()
+        if img is None:
+            img = grab()
         char_curse_area = cut_roi(img, Config().ui_roi["char_curse"])
         # open image in assets/curses/amplify_dmg.png
         # char_curse_area = cv2.imread("assets/curses/amplify_dmg.png", cv2.IMREAD_UNCHANGED)

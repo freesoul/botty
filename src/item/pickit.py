@@ -212,6 +212,8 @@ if __name__ == "__main__":
     pickit = PickIt()
     char = Hammerdin(Config().hammerdin, pather, pickit)
 
-    char.discover_capabilities()
+    # char.discover_capabilities()
 
-    print(pickit.pick_up_items(char))
+    while True:
+        print(pickit.pick_up_items(char))
+        wait(1)
